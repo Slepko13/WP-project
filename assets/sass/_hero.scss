@@ -1,0 +1,55 @@
+.hero {
+      min-height: 840px;
+      // background: url(../images/hero_bg_filled.png) center center no-repeat ;
+      // background-size: cover;
+      display: flex;
+ 
+      .wrap {
+            display: flex;
+            align-items: center;
+            margin-top: 605px;
+        
+       
+            .info {
+                 
+                  color: #ffffff;
+                  border-left: 1px solid $gold;
+                  
+                  .name {
+                        font-family: "Playfair Display";
+                        font-weight: 400;
+                        letter-spacing: 2.6px;
+                        line-height: 45px;
+                        
+                        font-family: "Playfair Display";
+                        font-size: 65px;
+                       
+                  }
+                  .proff {
+                        font-family: "Open Sans";
+                        font-size: 31px;
+                        letter-spacing: 1.24px;
+                        line-height: 36px;
+                  }
+
+            }
+            .button {
+                  display: flex;
+                  justify-content: flex-end;
+                  button {
+                        width: 181px;
+                        height: 50px;
+                        border-radius: 25px;
+                        background-color: $gold;
+                        border:none;
+                        color: #111111;
+                        font-family: "Playfair Display";
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 31px;
+                        letter-spacing: 0.64px;
+                  }
+
+            }
+      }
+}

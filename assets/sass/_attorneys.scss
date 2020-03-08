@@ -1,0 +1,127 @@
+.attorneys {
+      min-height: 472px;
+      padding-bottom: 100px;
+      padding-top: 100px;
+      .wrap {
+            position: relative;
+            padding-left: 15px;
+            
+            
+            .number {
+                  position: absolute;
+                  top: -90px;
+                  left: 5px;
+                  z-index: -2;
+                  color:#f3f3f3;
+                  font-family: "Open Sans";
+                  font-size: 195px;
+                  font-weight: 400;
+                //   line-height: 430.9px;
+                  letter-spacing: 0.56px;
+                  margin-left: 8px;
+            }
+
+            .title {                 
+            padding-left: 20px;
+                  color: #111111;
+                  font-family: "Playfair Display";
+                  font-size: 31px;
+                  font-weight: 400;
+                  line-height: 44.84px;
+                  letter-spacing: 1.24px;
+                  margin-bottom: 10px;
+                  position: relative;
+
+                  .border__left {
+                      position: absolute;
+                      top: 8px;
+                      left: 0;
+                      width: 2px;
+                      height: 104px;
+                      background-color: $gold;
+                      z-index: 10;
+                  }
+            }
+            .description {
+                padding-left: 20px;
+                  color: #666666;
+                  font-family: "Playfair Display";
+                  font-size: 21px;
+                  font-weight: 400;
+                  line-height: 30.89px;
+                  letter-spacing: 0.84px;
+                  margin-bottom: 70px;
+                  @media only screen and(max-width:768px) {
+                        font-size: 16px;
+                    }
+
+            }
+           
+      }
+     
+
+      .attorneys__items {
+          margin-bottom: 40px;
+  
+          
+          .attorneys__item {
+              margin-bottom: 40px;
+              
+  
+              .attorneys__wrap {
+                  position: relative;
+                  
+                  .attorneys__picture {
+                      width: 100%;
+                      
+                  }
+                  
+              }
+          }
+
+
+
+          .attorneys__title {
+              margin: 10px 0 0 0;                              
+              font-family: "Playfair Display";
+             font-size: 21px;
+             font-weight: 400;
+             letter-spacing: 0.84px;
+             line-height: 31px;
+             margin-top: 30px;
+
+              a {
+                  text-decoration: none;
+                  color: #111111;
+                
+              }
+  
+          }
+          .attorneys__content {
+            font-family: "Open Sans";
+            letter-spacing: 0.56px;
+            line-height: 24px;
+            color: #666666;
+            font-size: 14px;
+          
+          }
+       
+      }
+
+      .container {
+        .archive__link {
+            padding-left: 20px; 
+            padding-left: 20px;
+            color:#111111;
+            font-size: 18px;
+            font-weight: bold;
+           text-decoration: none;
+           &:hover {
+            color:$gold;
+        }
+           
+        }
+
+      }
+    
+  }

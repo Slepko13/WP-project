@@ -1,0 +1,136 @@
+.about {
+      min-height: 472px;
+      padding-bottom: 100px;
+      padding-top: 100px;
+      .wrap {
+            position: relative;
+            padding-left: 15px;
+            .number {
+                  position: absolute;
+                  top: -90px;
+                  left: 0;
+                  z-index: -2;
+                  color:#f3f3f3;
+                  font-family: "Open Sans";
+                  font-size: 195px;
+                  font-weight: 400;
+                //   line-height: 430.9px;
+                  letter-spacing: 0.56px;
+                  margin-left: 8px;
+                  padding-left: 5px;
+            }
+
+            .title {                 
+                  padding-left: 20px;
+                  color: #111111;
+                  font-family: "Playfair Display";
+                  font-size: 31px;
+                  font-weight: 400;
+                  line-height: 44.84px;
+                  letter-spacing: 1.24px;
+                  margin-bottom: 10px;
+                  .border__left {
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        width: 2px;
+                        height: 104px;
+                        background-color: $gold;
+                        z-index: 10;
+                    }
+            }
+            .description {
+                  padding-left: 20px;
+                  color: #666666;
+                  font-family: "Playfair Display";
+                  font-size: 21px;
+                  font-weight: 400;
+                  line-height: 30.89px;
+                  letter-spacing: 0.84px;
+                  margin-bottom: 70px;
+                  @media only screen and(max-width:768px) {
+                        font-size: 16px;
+                    }
+
+            }
+           
+      }
+     
+
+      .about__items {
+          margin-bottom: 40px;
+          .history {
+                display: flex;
+                flex-direction: column;
+           
+
+                .history__title {
+                  color: #111111;
+                  font-family: "Playfair Display";
+                  font-size: 21px;
+                  font-weight: 400;
+                  line-height: 31px;
+                  letter-spacing: 0.84px;
+                  margin-bottom: 35px;
+
+                }
+                .history__content {
+                      
+
+                      .item {
+                            display: flex;
+                            align-items: flex-end;
+                            margin-bottom: 22px;
+                           
+                           
+                            .date {
+                              color: #111111;
+                              font-family: "Open Sans";
+                              font-size: 21px;
+                              font-weight: 700;
+                              line-height: 31px;
+                              letter-spacing: 0.84px;
+                            }
+                            .text {
+                              color: #111111;
+                              font-family: "Open Sans";
+                              font-size: 16px;
+                              font-weight: 400;
+                              line-height: 21px;
+                              letter-spacing: 0.64px;
+                              padding-left: 30px;
+                            }
+                      }
+                      
+                }
+          }
+          .expertise {
+                  
+            @media only screen and(max-width:992px) {
+
+                  margin-top: 40px;
+              }
+          
+                .expertise__title {
+                  color: #111111;
+                  font-family: "Playfair Display";
+                  font-size: 21px;
+                  font-weight: 400;
+                  line-height: 31px;
+                  letter-spacing: 0.84px;
+                  margin-bottom: 35px;
+                }
+                .expertise__content {
+                        color: #666666;
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 31px;
+                        letter-spacing: 0.56px;
+                        
+                }
+          }
+  
+          
+      }
+  }

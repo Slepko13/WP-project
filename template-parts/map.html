@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #mapID {
+
+
+            height: 363px;
+            max-width: 500px;
+
+
+        }
+    </style>
+    <div id="mapID">
+
+    </div>
+    <script>
+
+        let lat = 40.649698;
+        let lng = -73.869333;
+        let zoom = 12;
+        let mymap = L.map('mapID').setView([lat, lng], zoom);
+
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXlrb2xhMTMiLCJhIjoiY2szdTQxdXduMDY4YTNsazR1ZTgxYWk3dCJ9.lBdOcRcQFNcPM1c-A7zQHg', {
+
+            id: 'mapbox/navigation-preview-day-v4',
+            accessToken: 'pk.eyJ1IjoibXlrb2xhMTMiLCJhIjoiY2szdTQxdXduMDY4YTNsazR1ZTgxYWk3dCJ9.lBdOcRcQFNcPM1c-A7zQHg'
+        }).addTo(mymap);
+
+        let myIcon = L.icon({
+            iconUrl: './images/marker.png',
+            iconSize: [106, 106],
+            //iconAnchor: [22, 94],
+            //popupAnchor: [96, 65]
+        });
+        let marker = L.marker([40.67871, -73.90318], {
+            icon: myIcon
+        }).addTo(mymap);
+    </script>
+</body>
+
+</html>
